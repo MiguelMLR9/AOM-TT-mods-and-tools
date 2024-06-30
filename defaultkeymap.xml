@@ -33,6 +33,13 @@
 			<command>uiFindIdleType("AbstractScout")</command>
 		</keymapdata>
 		<keymapdata>
+			<name>Find Scout and Open strategic Map</name>
+			<displayname>$$20845$$Find Scout + Open strategic Map</displayname>
+			<event>shift-'</event>
+			<context>game</context>
+			<command>uiFindIdleType("AbstractScout") strategicMap</command>
+		</keymapdata>
+		<keymapdata>
 			<name>Find Settlements</name>
 			<displayname>$$20846$$Find Settlements</displayname>
 			<event>h</event>

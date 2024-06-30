@@ -996,7 +996,7 @@ map ("control-i", "game", "gadgetToggle(\"UnitStatsDialog\")")
 map ("alt-o", "developer", "gadgetToggleIfNotMP(\"gameprotopalette\")")
 
 //Misc
-map ("shift-control-c", "world", "uiFindType(\"Camera Start\")")
+//map ("shift-control-c", "world", "uiFindType(\"Camera Start\")")
 
 
 
@@ -1096,7 +1096,7 @@ map("+shift-control-arrowright", "world", "cameraYawRight")
 map("+shift-control-arrowleft", "world", "cameraYawLeft")
 
 // World minimap
-map ("control-alt-m", "world", "gadgetRefresh(\"AGameMinimap\")")
+//map ("control-alt-m", "world", "gadgetRefresh(\"AGameMinimap\")")
 //map ("]", "world", "minimapZoomDelta(-0.1)")
 //map ("shift-]", "world", "minimapZoom(0.1)")
 //map ("[", "world", "minimapZoomDelta(0.1)")
@@ -1112,8 +1112,8 @@ map ("control-arrowdown", "game", "uiMinimizeMainBackground")
 map ("control-arrowup", "game", "uiMaximizeMainBackground")
 
 // World Quick save and quick load
-map ("control-alt-s", "world", "saveScenario(\"QuickSave\")")
-map ("control-alt-l", "world", "loadScenario(\"QuickSave\")")
+//map ("control-alt-s", "world", "saveScenario(\"QuickSave\")")
+//map ("control-alt-l", "world", "loadScenario(\"QuickSave\")")
 map ("control-s", "developer", "saveScenario(\"QuickSave\")")
 map ("control-l", "developer", "loadScenario(\"QuickSave\")")
 map ("control-shift-s", "world", "saveGame(\"QuickSavegame\")")
@@ -1405,10 +1405,35 @@ map ("mouse4down", "world", "uiDoubleClickSelect(0, true)")
 map ("shift-mouse4down", "world", "uiDoubleClickSelect(1, true)")
 
 //Find buildings
-map ("control-alt-shift-1", "game", "uiFindType(\"AbstractBarracks\") uiLookAtSelection")
-map ("control-alt-shift-2", "game", "uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") uiLookAtSelection")
-map ("control-alt-shift-3", "game", "uiFindType(\"AbstractStable\") uiFindType(\"Counter Building\") uiLookAtSelection")
-map ("control-alt-shift-4", "game", "uiFindType(\"AbstractFortress\") uiLookAtSelection")
-map ("control-alt-shift-5", "game", "uiFindType(\"Temple\") uiLookAtSelection")
+map ("control-alt-z", "game", "uiFindType(\"settlementsThatTrainVillagers\") uiLookAtSelection")
+map ("control-alt-x", "game", "uiFindType(\"AbstractBarracks\") uiLookAtSelection")
+map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") uiLookAtSelection")
+map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") uiFindType(\"Counter Building\") uiLookAtSelection")
+map ("control-alt-b", "game", "uiFindType(\"AbstractFortress\") uiLookAtSelection")
+map ("control-alt-n", "game", "uiFindType(\"Temple\") uiLookAtSelection")
+
+//Find units by abstract type
+map ("control-alt-q", "game", "uiFindType(\"AbstractInfantry\") uiLookAtSelection")
+map ("control-alt-w", "game", "uiFindType(\"AbstractArcher\") uiLookAtSelection")
+map ("control-alt-e", "game", "uiFindType(\"AbstractCavalry\") uiLookAtSelection")
+map ("control-alt-r", "game", "uiFindType(\"AbstractSiegeWeapon\") uiLookAtSelection")
+map ("control-alt-t", "game", "uiFindType(\"MythUnit\") uiLookAtSelection")
+map ("control-alt-y", "game", "uiFindType(\"FlyingUnit\") uiLookAtSelection")
+
+
+
+
+//Find units
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+//map ("control-alt-shift-", "game", "uiFindType(\"\")")
+
 
 »MIK3D10S«
