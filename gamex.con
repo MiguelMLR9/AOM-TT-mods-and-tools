@@ -117,7 +117,7 @@ map ("alt-6", "game", "uiSelectNumberGroup(6) uiLookAtNumberGroup(6)")
 map ("alt-7", "game", "uiSelectNumberGroup(7) uiLookAtNumberGroup(7)")
 map ("alt-8", "game", "uiSelectNumberGroup(8) uiLookAtNumberGroup(8)")
 map ("alt-9", "game", "uiSelectNumberGroup(9) uiLookAtNumberGroup(9)")
-//map ("q", "game", "uifSelectedUnits")
+//map ("q", "game", "uifSelectedUnits") //MANUAL CHANGE MOD
 
 // Jump-to-building hotkeys
 map ("/", "game", "uiFindType(\"Hero\")")
@@ -593,7 +593,8 @@ map ("esc", "specialpower", "editMode(\"none\")")
 //  garrison mappings  //
 /////////////////////////
 map ("mouse1down", "garrison", "")
-map ("mouse1up", "garrison", "uiGarrisonToPointer editMode(\"none\")")
+//map ("mouse1up", "garrison", "uiGarrisonToPointer editMode(\"none\")") //MANUAL CHANGE MOD
+map ("mouse1up", "garrison", "uiGarrisonToPointer editMode(\"none\") uiSelectionButtonUp") //MANUAL CHANGE MOD
 map ("mouse2down", "garrison", "")
 map ("mouse2up", "garrison", "editMode(\"none\")")
 map ("esc", "garrison", "editMode(\"none\")")
@@ -979,7 +980,7 @@ map("alt-shift-c", "developer", "cameraLimit(1) cameraLimit(0)")
 map("alt-shift-c", "editor", "cameraLimit(1) cameraLimit(0)")
 
 // Toggle camera rotation
-//map("alt-c", "world", "cameraRotate")
+//map("alt-c", "world", "cameraRotate") //MANUAL CHANGE MOD
 
 // Unit debugging.
 map("alt-f1", "developer", "configToggle(\"showSelectedUnitLOS\")")
@@ -1096,15 +1097,15 @@ map("+shift-control-arrowright", "world", "cameraYawRight")
 map("+shift-control-arrowleft", "world", "cameraYawLeft")
 
 // World minimap
-//map ("control-alt-m", "world", "gadgetRefresh(\"AGameMinimap\")")
+//map ("control-alt-m", "world", "gadgetRefresh(\"AGameMinimap\")") //MANUAL CHANGE MOD
 //map ("]", "world", "minimapZoomDelta(-0.1)")
 //map ("shift-]", "world", "minimapZoom(0.1)")
 //map ("[", "world", "minimapZoomDelta(0.1)")
 //map ("shift-[", "world", "minimapZoom(1.0)")
-map ("control-alt-tab", "world", "gadgetToggle(\"AGameMinimap\")")
+//map ("control-alt-tab", "world", "gadgetToggle(\"AGameMinimap\")") //MANUAL CHANGE MOD
 
 // World Game UI
-//map ("q", "game", "uiStopSelectedUnits")
+//map ("q", "game", "uiStopSelectedUnits") //MANUAL CHANGE MOD
 map ("alt-f", "game", "renderFriendOrFoe")
 map ("alt-f", "postgame", "renderFriendOrFoe")
 
@@ -1112,8 +1113,8 @@ map ("control-arrowdown", "game", "uiMinimizeMainBackground")
 map ("control-arrowup", "game", "uiMaximizeMainBackground")
 
 // World Quick save and quick load
-//map ("control-alt-s", "world", "saveScenario(\"QuickSave\")")
-//map ("control-alt-l", "world", "loadScenario(\"QuickSave\")")
+//map ("control-alt-s", "world", "saveScenario(\"QuickSave\")") //MANUAL CHANGE MOD
+//map ("control-alt-l", "world", "loadScenario(\"QuickSave\")") //MANUAL CHANGE MOD
 map ("control-s", "developer", "saveScenario(\"QuickSave\")")
 map ("control-l", "developer", "loadScenario(\"QuickSave\")")
 map ("control-shift-s", "world", "saveGame(\"QuickSavegame\")")
@@ -1122,10 +1123,10 @@ map ("control-shift-l", "world", "loadGame(\"QuickSavegame\")")
 // World selection
 map ("mouse1down", "world", "uiSelectionButtonDown")
 map ("mouse1up", "world", "uiSelectionButtonUp")
-//map ("alt-mouse1down", "world", "uiSelectionButtonDown")
-//map ("alt-mouse1up", "world", "uiSelectionButtonUp")
-//map ("control-mouse1down", "world", "uiAddSelectionButtonDown")
-//map ("control-mouse1up", "world", "uiToggleSelectionButton")
+//map ("alt-mouse1down", "world", "uiSelectionButtonDown")//MANUAL CHANGE MOD
+//map ("alt-mouse1up", "world", "uiSelectionButtonUp")//MANUAL CHANGE MOD
+//map ("control-mouse1down", "world", "uiAddSelectionButtonDown")//MANUAL CHANGE MOD
+//map ("control-mouse1up", "world", "uiToggleSelectionButton")//MANUAL CHANGE MOD
 map ("shift-mouse1down", "world", "uiAddSelectionButtonDown")
 map ("shift-mouse1up", "world", "uiToggleSelectionButton")
 //map ("shift-mouse1down", "world", "")
@@ -1313,12 +1314,12 @@ map ("Alt-Control-mouse1down", "game", "editMode(\"flare\") uiSetProtoCursor(\"W
 map ("Alt-Control-mouse1up", "flare", "uiFlareAtPointer editMode(\"none\")")
 /Zopenco/
 map ("Alt-Control-mouse2down", "game", "sendChatToAllies(\"<color={playerColor(-1)}>Retrocede!. | Back!.</color>\")sendChatToAllies(\"44\") uiFlareAtPointer")
-/Bengala/
+///Bengala/ *EN USO*
 map ("Alt-Control-mouse3down", "game", "uiFlareAtPointer")
 /Amuralla aqui/
-map ("Alt-Control-mouse4down", "game", "sendChatToAllies(\"<color={playerColor(-1)}>Amuralla Aqui!. | Build Wall here!.</color>\") uiFlareAtPointer")
+//map ("Alt-Control-mouse4down", "game", "sendChatToAllies(\"<color={playerColor(-1)}>Amuralla Aqui!. | Build Wall here!.</color>\") uiFlareAtPointer")
 /Construye aqui/
-map ("Alt-Control-mouse5down", "game", "sendChatToAllies(\"<color={playerColor(-1)}>Amuralla Aqui!. | Build here!.</color>\") uiFlareAtPointer")
+//map ("Alt-Control-mouse5down", "game", "sendChatToAllies(\"<color={playerColor(-1)}>Amuralla Aqui!. | Build here!.</color>\") uiFlareAtPointer")
 /BOTON 5 POR ASIGNAR/
 
 //---/*Control + shift*/---
@@ -1363,48 +1364,45 @@ map ("Alt-Control-mouse5down", "game", "sendChatToAllies(\"<color={playerColor(-
 
 /NEW COMMANDS
 
-// Add resources
+// Add resources NOT WORKING IN MULTIPLAYER
 //map("control-alt-shift-a","game","rmAddPlayerResource(1, \"food\", 9000)")
 
-//Replaces all of one with the other, via mutation. NOT WORKING ONLINE
+//Replaces all of one with the other, via mutation. NOT WORKING IN MULTIPLAYER
 //map("control-alt-shift-a","game","unitTransform(\"Promethean Small\", \"Promethean\")")
 //map("control-alt-shift-s","game","unitTransform(\"Oracle Scout\", \"Arkantos God\")")
 
-//Toggle building Queue
+//Toggle building Queue -Already in defaultkeymap
 //map ("shift-q", "game", "uiToggleBuildingQueue")
-
-//Toggle building Queue
-//map ("control-shift-v", "game", "uiFindType(\"settlementsThatTrainVillagers\")tis(\"Villager Atlantean\")")
-
-// Commands the selected unit(s) to repair the target building at the pointer position.
-// map("alt-space","game","uiRepairAtPointer()") //this command now is in defaultkeymap as uiEjectGarrisonedUnits()
 
 // Rotate buildings with the scroll wheel
 map("shift-mousez", "building", "uiWheelRotatePlacedUnit")
 
 /EasyDragMilitary Off when ctrl is down/
 map ("control-mouse1down", "game", "uiAddSelectionButtonDown configUndef(\"EasyDragMilitary\")")//uiSelectionButtonDown()
-map ("control-mouse1up", "game", "uiToggleSelectionButton configdef(\"EasyDragMilitary\")")//uiSelectionButtonUp() 
-//Mapa estrategico con pausa/
-map ("control-tab", "game", "pause() strategicMap")
-
-//Find Hesperides Tree (Atlanteans) [commented because is already set on uimain.xml]
-//map ("control-h", "game", "uiFindType(\"Hesperides Tree\")")
+map ("control-mouse1up", "game", "uiToggleSelectionButton configdef(\"EasyDragMilitary\")")//uiSelectionButtonUp()
 
 //Reset camera default zoom and rotation
 map("alt-c", "world", "cameraRotate() cameraRotate()")
 
+//Send unit to repair/work/build in a passive stance (ignoring damage, not running when attacked)
+map ("control-mouse1up", "repair", "unitSetStancePassive() uiRepairAtPointer editMode(\"none\")")
+map ("control-mouse1up", "building", "unitSetStancePassive() uiBuildAtPointer")
+map ("control-mouse2up", "BuildAccel", "unitSetStancePassive() uiWorkAtPointer")
+map ("control-mouse1up", "garrison", "unitSetStancePassive() uiGarrisonToPointer editMode(\"none\") uiSelectionButtonUp") //MANUAL CHANGE MOD
+//map ("control-mouse2up", "world", "unitSetStancePassive() uiWorkAtPointer") //Commented because I don't want this to work for every unit/building
+
 //SELECTION
 //map ("mouse5down", "world", "")
-map ("mouse5down", "world", "uiDoubleClickSelect(0)")
+map ("mouse4down", "world", "uiDoubleClickSelect(0)") //Select all units of the same type (in the screen) and throw the actual selection
+map ("control-alt-0", "world", "uiDoubleClickSelect(0)")
 //map ("mouse5down", "world", "")
-map ("shift-mouse5down", "world", "uiDoubleClickSelect(1)")
+map ("shift-mouse4down", "world", "uiDoubleClickSelect(1)") //Add all units of the same type (in the screen) to the actual selection
 //map ("mouse4down", "world", "")
-map ("mouse4down", "world", "uiDoubleClickSelect(0, true)")
+map ("mouse5down", "world", "uiDoubleClickSelect(0, true)") //Select all units of the same type (in the screen) WHAT ARE PERFORMING THE SAME ACTION and throw the actual selection
 //map ("shift-mouse4down", "world", "")
-map ("shift-mouse4down", "world", "uiDoubleClickSelect(1, true)")
+map ("shift-mouse5down", "world", "uiDoubleClickSelect(1, true)") //Add all units of the same type (in the screen) WHAT ARE PERFORMING THE SAME ACTION to the actual selection
 
-//Find buildings
+//Find buildings [abstract type], select and move the camera to them.
 map ("control-alt-z", "game", "uiFindType(\"settlementsThatTrainVillagers\") uiLookAtSelection")
 map ("control-alt-x", "game", "uiFindType(\"AbstractBarracks\") uiLookAtSelection")
 map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") uiLookAtSelection")
@@ -1412,16 +1410,21 @@ map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") uiFindType(\"Count
 map ("control-alt-b", "game", "uiFindType(\"AbstractFortress\") uiLookAtSelection")
 map ("control-alt-n", "game", "uiFindType(\"Temple\") uiLookAtSelection")
 
+//Find buildings [abstract type], select without move the camera [just select and show in minimap].
+map ("alt-shift-z", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"settlementsThatTrainVillagers\") trackPlay(1,-1)")
+map ("alt-shift-x", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractBarracks\") trackPlay(1,-1)")
+map ("alt-shift-c", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") trackPlay(1,-1)")
+map ("alt-shift-v", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") uiFindType(\"Counter Building\") trackPlay(1,-1)")
+map ("alt-shift-b", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
+map ("alt-shift-n", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Temple\") trackPlay(1,-1)")
+
 //Find units by abstract type
 map ("control-alt-q", "game", "uiFindType(\"AbstractInfantry\") uiLookAtSelection")
 map ("control-alt-w", "game", "uiFindType(\"AbstractArcher\") uiLookAtSelection")
 map ("control-alt-e", "game", "uiFindType(\"AbstractCavalry\") uiLookAtSelection")
 map ("control-alt-r", "game", "uiFindType(\"AbstractSiegeWeapon\") uiLookAtSelection")
-map ("control-alt-t", "game", "uiFindType(\"MythUnit\") uiLookAtSelection")
+map ("control-alt-t", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"MythUnit\") trackPlay(1,-1)")
 map ("control-alt-y", "game", "uiFindType(\"FlyingUnit\") uiLookAtSelection")
-
-
-
 
 //Find units
 //map ("control-alt-shift-", "game", "uiFindType(\"\")")
