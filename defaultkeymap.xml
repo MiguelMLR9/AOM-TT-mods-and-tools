@@ -2930,7 +2930,7 @@
 		<keymapdata>
 			<name>Startup competitive game Atlantean</name>
 			<displayname>Secuencia inicial en partidas online</displayname>
-			<event>control-shift-v</event>
+			<event>shift-enter</event>
 			<context>game</context>
             <command>uiFindType("settlementsThatTrainVillagers") tis("Villager Norse") tis("Villager Egyptian") tis("Villager Greek") tis("Villager Atlantean") tis("Villager chinese") uiToggleBuildingQueue uiFindType("AbstractVillager") tis("Granary") tis("Storage Pit") tis("Guild")</command>
 		</keymapdata>
