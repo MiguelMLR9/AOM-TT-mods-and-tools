@@ -1,0 +1,44 @@
+El Uimain.XML de esta carpeta
+tiene otro gadget que muestra
+las letras de Hotkey que personalize
+para mi perfil.
+
+Asi que si no quieres que se vea este
+gadget, utiliza el que esta en la carpeta
+de Ippert.
+
+defaultkeymap.xml va en la carpeta data\
+tiene algunas hotkeys personalizadas para
+mi perfil. Por ejemplo:
+-"h" para buscar centro urbano: SE QUITO.
+-"control-tab" activa el autoqueue.
+-entre otros.
+
+gamex.con tiene algunos hotkeys comentados
+del juego original, a esas lineas les puse
+un comentario que dice:
+
+-//MANUAL CHANGE MOD
+
+Todas los demas atajos agregados por mi
+empiezan hasta abajo del archivo.
+
+localex.cfg esta es la configuracion que
+tengo para el juego en una pantalla con
+resolucion 1920x1080. A mi me funciona bien
+
+Carpeta Ippert's Complete UI:
+    Esta es la UI que utilizo para el juego
+    hice una modificacion al archivo uimain.xml
+    que esta dentro de la carpeta 'data'
+    donde le agregue el panel de comandos
+    de combate y puse el estandarte de
+    aldeanos inactivos mas grande y cerca
+    del centro.
+
+    Esas son las unicas modificaciones, si no 
+    las quieres entonces SOLO copia el archivo
+    uimain.XMB que esta dentro de la carpeta
+    'RESPALDO ORIGINAL XMB - Ippert", en ese
+    caso el archivo .XMB debe ir en la carpeta
+    'data' del juego.

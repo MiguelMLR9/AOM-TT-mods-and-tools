@@ -42,7 +42,7 @@
 		<keymapdata>
 			<name>Find Settlements</name>
 			<displayname>$$20846$$Find Settlements</displayname>
-			<event>h</event>
+			<event></event>
 			<context>game</context>
 			<command>uiFindType("settlementsThatTrainVillagers")</command>
 			<allowmultiplebindings>1</allowmultiplebindings>
@@ -581,7 +581,7 @@
 		<keymapdata>
 			<name>Autoqueue</name>
 			<displayname>Act./desact. cola automatica</displayname>
-			<event>shift-q</event>
+			<event>control-tab</event>
 			<context>game</context>
 			<command>uiToggleBuildingQueue</command>
 		</keymapdata>
