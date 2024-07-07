@@ -476,7 +476,7 @@
 		<keymapdata>
 			<name>Garrison</name>
 			<displayname>Guarecer</displayname>
-			<event/>
+			<event>m</event>
 			<context>MilitaryUnitAccel</context>
 			<command>editMode("garrison")</command>
 		</keymapdata>
@@ -490,21 +490,21 @@
 		<keymapdata>
 			<name>UnGarrison</name>
 			<displayname>Expulsar Unidades Guarecidas</displayname>
-			<event>alt-space</event>
+			<event>n</event>
 			<context>game</context>
 			<command>uiEjectGarrisonedUnits()</command>
 		</keymapdata>
 		<keymapdata>
 			<name>Guard</name>
 			<displayname>Proteger</displayname>
-			<event></event>
+			<event>w</event>
 			<context>MilitaryUnitAccel</context>
 			<command>editMode("guard")</command>
 		</keymapdata>
 		<keymapdata>
 			<name>Patrol</name>
 			<displayname>Patrullar</displayname>
-			<event></event>
+			<event>t</event>
 			<context>MilitaryUnitAccel</context>
 			<command>editMode("patrol")</command>
 		</keymapdata>
@@ -518,7 +518,7 @@
 		<keymapdata>
 			<name>Stop</name>
 			<displayname>Detener</displayname>
-			<event></event>
+			<event>q</event>
 			<context>MilitaryUnitAccel</context>
 			<command>uiStopSelectedUnits</command>
 		</keymapdata>
@@ -732,7 +732,7 @@
 		<keymapdata>
 			<name>StrategicMap</name>
 			<displayname>Mostrar mapa estrategico</displayname>
-			<event></event>
+			<event>tab</event>
 			<context>game</context>
 			<command>strategicMap</command>
 		</keymapdata>

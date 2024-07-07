@@ -10,6 +10,9 @@
 //  Root mappings  //
 /////////////////////
 
+map ("shift-r", "developer", "gameSpeed(2) rateSet(10)")
+map ("control-shift-r", "developer", "gameSpeed(1) rateSetNormal()")
+
 // basic interface mappings
 //map ("arrowdown", "root", "gadgetScrollDown")
 //map ("arrowup", "root", "gadgetScrollUp")
@@ -1165,6 +1168,44 @@ map ("alt-e", "developer", "subModeToggleBetweenIfNotMP(\"Simulation\", \"Editor
 map ("control-alt-g", "developer", "subModeToggleBetweenIfNotMP(\"Simulation\", \"Editor\", \"SinglePlayer\")")
 
 ///////////////////////
+//  Observer Modes   //
+///////////////////////
+//Resources Tab
+map ("alt-shift-r", "observer", "uiToggleObserverMode(0)")
+//Productions Tab
+map ("alt-shift-p", "observer", "uiToggleObserverMode(1)")
+//Losses Tab
+map ("alt-shift-l", "observer", "uiToggleObserverMode(2)")
+//Kills Tab
+map ("alt-shift-k", "observer", "uiToggleObserverMode(3)")
+//Units Tab
+map ("alt-shift-u", "observer", "uiToggleObserverMode(4)")
+//Buildings Tab
+map ("alt-shift-b", "observer", "uiToggleObservermode(5)")
+//Nothing(observer) Tab
+map ("alt-shift-o", "observer", "uiToggleObserverMode(6)")
+
+//Change playerPerspective
+map ("alt-shift-=", "observer", "uiChangeObserverPerspective(-1)")
+map ("alt-shift-1", "observer", "uiChangeObserverPerspective(1)")
+map ("alt-shift-2", "observer", "uiChangeObserverPerspective(2)")
+map ("alt-shift-3", "observer", "uiChangeObserverPerspective(3)")
+map ("alt-shift-4", "observer", "uiChangeObserverPerspective(4)")
+map ("alt-shift-5", "observer", "uiChangeObserverPerspective(5)")
+map ("alt-shift-6", "observer", "uiChangeObserverPerspective(6)")
+map ("alt-shift-7", "observer", "uiChangeObserverPerspective(7)")
+map ("alt-shift-8", "observer", "uiChangeObserverPerspective(8)")
+map ("alt-shift-9", "observer", "uiChangeObserverPerspective(9)")
+map ("alt-shift-0", "observer", "uiChangeObserverPerspective(10)")
+map ("alt-shift--", "observer", "uiChangeObserverPerspective(11)")
+//Toggle chat output
+map ("alt-shift-c", "observer", "uiToggleChat()")
+//Toggle FOW
+map ("alt-shift-f", "observer", "uiToggleObserverFOW()")
+//Reset camera rotation
+map ("alt-shift-home", "world", "uiResetWheelRotate()")
+
+///////////////////////
 //  Other Modes      //
 ///////////////////////
 
@@ -1273,8 +1314,8 @@ map("pageup", "world", "uiChatScroll(1)")
 // the can override other hotkeys in developer mode.
 map("+pagedown", "developer", "cameraDown")
 map("+pageup", "developer", "cameraUp")
-map("+a", "developer", "cameraPitchForward")
-map("+z", "developer", "cameraPitchBackward")
+//map("+a", "developer", "cameraPitchForward")
+//map("+z", "developer", "cameraPitchBackward")
 map("+pagedown", "editor", "cameraDown")
 map("+pageup", "editor", "cameraUp")
 map("+a", "editor", "cameraPitchForward")
@@ -1291,7 +1332,6 @@ map("alt-m", "game", "unitSetFormationMixed()")
 map("alt-x", "game", "unitSetFormationSpread()")
 
 map("alt-n", "game", "uiToggleCombatCommands")
-
 
 /CHAT A ALIADOS/
 
@@ -1405,8 +1445,8 @@ map ("shift-mouse5down", "world", "uiDoubleClickSelect(1, true)") //Add all unit
 //Find military and mythic buildings [abstract type], select and move the camera to them.
 map ("control-alt-z", "game", "uiFindType(\"settlementsThatTrainVillagers\") editMode(\"none\")")
 map ("control-alt-x", "game", "uiFindType(\"AbstractBarracks\") editMode(\"none\")")
-map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") editMode(\"none\")")
-map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") editMode(\"none\")")
+map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") editMode(\"none\")")
+map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") uiFindType(\"Counter Building\") editMode(\"none\")")
 map ("control-alt-b", "game", "uiFindType(\"AbstractFortress\") editMode(\"none\")")
 map ("control-alt-n", "game", "uiFindType(\"Temple\") editMode(\"none\")")
 map ("control-alt-m", "game", "uiFindType(\"MilitaryBuilding\") editMode(\"none\")")
@@ -1420,8 +1460,8 @@ map ("control-alt-g", "game", "trackInsert() trackAddWaypoint() trackSave() uiFi
 //Find buildings military and mythic [abstract type], select without move the camera [just select and show in minimap].
 map ("control-shift-z", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"settlementsThatTrainVillagers\") trackPlay(1,-1)")
 map ("control-shift-x", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractBarracks\") trackPlay(1,-1)")
-map ("control-shift-c", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcheryRange\") trackPlay(1,-1)")
-map ("control-shift-v", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") trackPlay(1,-1)")
+map ("control-shift-c", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") trackPlay(1,-1)")
+map ("control-shift-v", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") uiFindType(\"Counter Building\") trackPlay(1,-1)")
 map ("control-shift-b", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
 map ("control-shift-n", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Temple\") trackPlay(1,-1)")
 map ("control-shift-m", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"MilitaryBuilding\") trackPlay(1,-1)")

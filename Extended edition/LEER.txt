@@ -1,0 +1,15 @@
+Estos son los archivos para el extended edition:
+game va en la carpeta '\startup'
+DefaultKeyMap va en la carpeta '\data'
+*IMPORTANTE*
+	EL ARCHIVO UIMAIN NO ES NECESARIO
+	SOLO ES UN RESPALDO DE UNAS MODIFICACIONES QUE LE
+	HICE A LA DE Ippert's, el mod de la interfaz de Ippert's
+	se puede buscar en steam e instalarse.
+	
+	En caso de que se quiera usar y ver el uimain personalizado:
+	-Se debe instalar la interfaz de usuario de Ippert's
+	desde steam, y despues, ir a:
+	\mods\Ippert's Complete UI\data
+	y sobreescribir ahi el archivo. [recomiendo hacer un respaldo
+	del original]
