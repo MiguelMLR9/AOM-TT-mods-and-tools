@@ -1508,7 +1508,7 @@ map ("control-shift-h", "game", "trackInsert() trackAddWaypoint() trackSave() ui
 	//ESPECIALES EXTENDED EDITION
 //Hotkeys que tenia en defaultkeymap pero tuve que agregarlos aqui porque no se puede modificar ese archivo; da error online.
 	//Find Idle Scout + Open strategic Map
-map ("shift-enter", "game", "uiFindIdleType(\"AbstractScout\") strategicMap")
+map ("shift-'", "game", "uiFindIdleType(\"AbstractScout\") strategicMap")
 	//Find Hesperides Tree
 map ("control-h", "game", "uiFindType(\"Hesperides Tree\")")
 	//Hesperides Tree; Train Dryad

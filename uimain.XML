@@ -180,7 +180,7 @@
 		<stateentry background="icons\ui minimap flare"/>
 		<command>editMode("flare") uiSetProtoCursor("Waypoint Flag")</command>
 	</gadget>
-	<gadget name="commandPanelHotkeyHelp" type="gadget" outlinecolor="" z="15">
+	<gadget name="commandPanelHotkeyHelp" type="gadget" outlinecolor="" z="16">
 		<gadget name="commandPanelHotkeyHelp00" size1024="122 640 158 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">Q</gadget>
 		<gadget name="commandPanelHotkeyHelp01" size1024="161 640 197 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">W</gadget>
 		<gadget name="commandPanelHotkeyHelp02" size1024="200 640 236 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">E</gadget>
