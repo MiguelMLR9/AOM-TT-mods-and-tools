@@ -26,6 +26,7 @@
 			<command>uiFindIdleType("LogicalTypeIdleMilitary")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event') change from original value!-->
 			<name>Find Scout</name>
 			<displayname>$$20845$$Find Scout</displayname>
 			<event>'</event>
@@ -33,6 +34,7 @@
 			<command>uiFindIdleType("AbstractScout")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Find Scout and Open strategic Map</name>
 			<displayname>$$20845$$Find Scout + Open strategic Map</displayname>
 			<event>shift-'</event>
@@ -40,6 +42,7 @@
 			<command>uiFindIdleType("AbstractScout") strategicMap</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event') change from original value!-->
 			<name>Find Settlements</name>
 			<displayname>$$20846$$Find Settlements</displayname>
 			<event></event>
@@ -160,6 +163,7 @@
 			<command>uiFindType("Temple")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Find Hesperides Tree</name>
 			<displayname>Find Hesperides Tree</displayname>
 			<event>control-h</event>
@@ -474,10 +478,11 @@
 	</keymapgroup>
 	<keymapgroup name="Unit Stances And Formations" displayname="$$22329$$Unit Stances And Formations">
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Garrison</name>
 			<displayname>Guarecer</displayname>
 			<event>m</event>
-			<context>MilitaryUnitAccel</context>
+			<context>game</context>
 			<command>editMode("garrison")</command>
 		</keymapdata>
 		<keymapdata>
@@ -495,17 +500,19 @@
 			<command>uiEjectGarrisonedUnits()</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event' and 'context') change from original value!-->
 			<name>Guard</name>
 			<displayname>Proteger</displayname>
-			<event>w</event>
-			<context>MilitaryUnitAccel</context>
+			<event>alt-w</event>
+			<context>game</context>
 			<command>editMode("guard")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event' and 'context') change from original value!-->
 			<name>Patrol</name>
 			<displayname>Patrullar</displayname>
-			<event>t</event>
-			<context>MilitaryUnitAccel</context>
+			<event>alt-e</event>
+			<context>game</context>
 			<command>editMode("patrol")</command>
 		</keymapdata>
 		<keymapdata>
@@ -523,52 +530,59 @@
 			<command>uiStopSelectedUnits</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Set Stance Aggressive</name>
 			<displayname>$$22330$$Set Stance Aggressive</displayname>
 			<event>alt-a</event>
-			<context>game</context>
+			<context>MilitaryUnitAccel</context>
 			<command>unitSetStanceAggressive()</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Set Stance Defensive</name>
 			<displayname>$$22331$$Set Stance Defensive</displayname>
 			<event>alt-d</event>
-			<context>game</context>
+			<context>MilitaryUnitAccel</context>
 			<command>unitSetStanceDefensive()</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Set Stance Passive</name>
 			<displayname>$$22332$$Set Stance Passive</displayname>
 			<event>alt-s</event>
-			<context>game</context>
+			<context>MilitaryUnitAccel</context>
 			<command>unitSetStancePassive()</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Set Default Formation</name>
 			<displayname>$$22333$$Set Default Formation</displayname>
 			<event>alt-l</event>
-			<context>game</context>
+			<context>MilitaryUnitAccel</context>
 			<command>unitSetFormationDefault()</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Set Box Formation</name>
 			<displayname>$$22334$$Set Box Formation</displayname>
 			<event>alt-b</event>
-			<context>game</context>
+			<context>MilitaryUnitAccel</context>
 			<command>unitSetFormationBox()</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Set Mixed Formation</name>
 			<displayname>$$22335$$Set Mixed Formation</displayname>
 			<event>alt-m</event>
-			<context>game</context>
+			<context>MilitaryUnitAccel</context>
 			<command>unitSetFormationMixed()</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('context') change from original value!-->
 			<name>Set Spread Formation</name>
 			<displayname>$$22336$$Set Spread Formation</displayname>
 			<event>alt-x</event>
-			<context>game</context>
+			<context>MilitaryUnitAccel</context>
 			<command>unitSetFormationSpread()</command>
 		</keymapdata>
 		<keymapdata>
@@ -579,6 +593,7 @@
 			<command>uiToggleCombatCommands</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event') change from original value!-->
 			<name>Autoqueue</name>
 			<displayname>Act./desact. cola automatica</displayname>
 			<event>control-tab</event>
@@ -586,9 +601,10 @@
 			<command>uiToggleBuildingQueue</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event') change from original value!-->
 			<name>Transform Hero</name>
 			<displayname>Transformar en Heroe</displayname>
-			<event>shift-z</event>
+			<event>alt-z</event>
 			<context>game</context>
 			<command>uiTransformSelectedUnit("Swordsman Hero") uiTransformSelectedUnit("Javelin Cavalry Hero") uiTransformSelectedUnit("Trident Soldier Hero") uiTransformSelectedUnit("Royal Guard Hero") uiTransformSelectedUnit("Lancer Hero") uiTransformSelectedUnit("Archer Atlantean Hero") uiTransformSelectedUnit("Maceman Hero") uiTransformSelectedUnit("Oracle Hero") uiTransformSelectedUnit("Villager Atlantean Hero")</command>
 		</keymapdata>
@@ -714,9 +730,10 @@
 			<command>tis("Settlement Level 1")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event') change from original value!-->
 			<name>Repair</name>
 			<displayname>Reparar</displayname>
-			<event>shift-r</event>
+			<event>alt-r</event>
 			<context>BuildAccel</context>
 			<command>editMode("repair")</command>
 		</keymapdata>
@@ -2470,11 +2487,12 @@
 			<command>uiSetSpecialPower(436) editMode("specialpower")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Train Dryad (Hesperides)</name>
 			<displayname>Train Dryad</displayname>
 			<event>q</event>
 			<context>game</context>
-			<command>tis("Dryad")</command>
+			<command>tis("Dryad") uiStopSelectedUnits</command>
 		</keymapdata>
 		<keymapdata>
 			<name>Vortex</name>
@@ -2493,6 +2511,7 @@
 	</keymapgroup>
 	<keymapgroup name="Temple Atlantean" displayname="Templo">
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Promethean|Caladrius|Automaton</name>
 			<displayname>$$23355$$Promethean | $$23352$$Caladrius | $$23349$$Automaton</displayname>
 			<event>q</event>
@@ -2500,6 +2519,7 @@
 			<command>tis("Promethean") tis("Flying Medic") tis("Automaton")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Stymphalian Bird|Satyr|Behemoth</name>
 			<displayname>$$23357$$Stymphalian Bird | $$23356$$Satyr | $$23351$$Behemoth</displayname>
 			<event>w</event>
@@ -2507,6 +2527,7 @@
 			<command>tis("Stymphalian Bird") tis("Satyr") tis("Behemoth")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Lampades|Heka Gigantes|Argus</name>
 			<displayname>$$23354$$Lampades | $$23353$$Heka Gigantes | $$23350$$Argus</displayname>
 			<event>e</event>
@@ -2656,6 +2677,7 @@
 	</keymapgroup>
 	<keymapgroup name="Atlantean Barracks" displayname="Cuarteles militares">
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Murmillo</name>
 			<displayname>$$23325$$Murmillo</displayname>
 			<event>q</event>
@@ -2663,6 +2685,7 @@
 			<command>tis("Swordsman",1)</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Contarius</name>
 			<displayname>$$23326$$Contarius</displayname>
 			<event>w</event>
@@ -2670,6 +2693,7 @@
 			<command>tis("Lancer",1)</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Arcus</name>
 			<displayname>$$23327$$Arcus</displayname>
 			<event>e</event>
@@ -2721,6 +2745,7 @@
 	</keymapgroup>
 	<keymapgroup name="Atlantean Specialist Barracks" displayname="Cuarteles de contraataque">
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Katapeltes</name>
 			<displayname>$$23332$$Katapeltes</displayname>
 			<event>q</event>
@@ -2728,6 +2753,7 @@
 			<command>tis("Maceman",1)</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Tuma</name>
 			<displayname>$$23333$$Tuma</displayname>
 			<event>w</event>
@@ -2735,6 +2761,7 @@
 			<command>tis("Javelin Cavalry",1)</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Chieroballista</name>
 			<displayname>$$23334$$Chieroballista</displayname>
 			<event>e</event>
@@ -2786,6 +2813,7 @@
 	</keymapgroup>
 	<keymapgroup name="Atlantean Palace" displayname="Palacio">
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Destroyer</name>
 			<displayname>$$23344$$Destroyer</displayname>
 			<event>q</event>
@@ -2793,6 +2821,7 @@
 			<command>tis("Trident Soldier",1)</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Fanatic</name>
 			<displayname>$$23345$$Fanatic</displayname>
 			<event>w</event>
@@ -2800,6 +2829,7 @@
 			<command>tis("Royal Guard",1)</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Fire Siphon</name>
 			<displayname>$$23339$$Fire Siphon</displayname>
 			<event>e</event>
@@ -2928,6 +2958,7 @@
 	<keymapgroup name="Extras divider" displayname="..............................................................................................................................................."></keymapgroup>
 	<keymapgroup name="Extrahotkeys" displayname="Extras">
 		<keymapdata>
+			<!-- Added by MIK3D10S!-->
 			<name>Startup competitive game Atlantean</name>
 			<displayname>Secuencia inicial en partidas online</displayname>
 			<event>shift-enter</event>
@@ -2935,6 +2966,7 @@
             <command>uiFindType("settlementsThatTrainVillagers") tis("Villager Norse") tis("Villager Egyptian") tis("Villager Greek") tis("Villager Atlantean") tis("Villager chinese") uiToggleBuildingQueue uiFindType("AbstractVillager") tis("Granary") tis("Storage Pit") tis("Guild")</command>
 		</keymapdata>
 		<keymapdata>
+			<!-- hotkey ('event') change from original value!-->
 			<name>AgeUpDialog</name>
 			<displayname>Avanzar Edad Clasica/Heroica/Mitica</displayname>
 			<event>control-shift-tab</event>

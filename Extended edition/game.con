@@ -1445,8 +1445,8 @@ map ("shift-mouse5down", "world", "uiDoubleClickSelect(1, true)") //Add all unit
 //Find military and mythic buildings [abstract type], select and move the camera to them.
 map ("control-alt-z", "game", "uiFindType(\"settlementsThatTrainVillagers\") editMode(\"none\")")
 map ("control-alt-x", "game", "uiFindType(\"AbstractBarracks\") editMode(\"none\")")
-map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") editMode(\"none\")")
-map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") uiFindType(\"Counter Building\") editMode(\"none\")")
+map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") editMode(\"none\")")
+map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") editMode(\"none\")")
 map ("control-alt-b", "game", "uiFindType(\"AbstractFortress\") editMode(\"none\")")
 map ("control-alt-n", "game", "uiFindType(\"Temple\") editMode(\"none\")")
 map ("control-alt-m", "game", "uiFindType(\"MilitaryBuilding\") editMode(\"none\")")
@@ -1460,8 +1460,8 @@ map ("control-alt-g", "game", "trackInsert() trackAddWaypoint() trackSave() uiFi
 //Find buildings military and mythic [abstract type], select without move the camera [just select and show in minimap].
 map ("control-shift-z", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"settlementsThatTrainVillagers\") trackPlay(1,-1)")
 map ("control-shift-x", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractBarracks\") trackPlay(1,-1)")
-map ("control-shift-c", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcheryRange\") uiFindType(\"Barracks Atlantean\") trackPlay(1,-1)")
-map ("control-shift-v", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") uiFindType(\"Counter Building\") trackPlay(1,-1)")
+map ("control-shift-c", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcheryRange\") trackPlay(1,-1)")
+map ("control-shift-v", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") trackPlay(1,-1)")
 map ("control-shift-b", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
 map ("control-shift-n", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Temple\") trackPlay(1,-1)")
 map ("control-shift-m", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"MilitaryBuilding\") trackPlay(1,-1)")
@@ -1504,5 +1504,32 @@ map ("control-shift-h", "game", "trackInsert() trackAddWaypoint() trackSave() ui
 //map ("control-alt-shift-", "game", "uiFindType(\"\")")
 //map ("control-alt-shift-", "game", "uiFindType(\"\")")
 
-
 »MIK3D10S«
+	//ESPECIALES EXTENDED EDITION
+//Hotkeys que tenia en defaultkeymap pero tuve que agregarlos aqui porque no se puede modificar ese archivo; da error online.
+	//Find Idle Scout + Open strategic Map
+map ("shift-enter", "game", "uiFindIdleType(\"AbstractScout\") strategicMap")
+	//Find Hesperides Tree
+map ("control-h", "game", "uiFindType(\"Hesperides Tree\")")
+	//Hesperides Tree; Train Dryad
+map ("q", "game", "tis(\"Dryad\") uiStopSelectedUnits")
+	//Temple Atlantean; Train mythic units
+map ("q", "TempleAtlanteanAccel", "tis(\"Promethean\") tis(\"Flying Medic\") tis(\"Automaton\")")
+map ("w", "TempleAtlanteanAccel", "tis(\"Stymphalian Bird\") tis(\"Satyr\") tis(\"Behemoth\")")
+map ("e", "TempleAtlanteanAccel", "tis(\"Lampades\") tis(\"Heka Gigantes\") tis(\"Argus\")")
+	//Barracks Atlantean; Train units
+map ("q", "AtlanteanBarracksAccel", "tis(\"Swordsman\",1)")
+map ("w", "AtlanteanBarracksAccel", "tis(\"Lancer\",1)")
+map ("e", "AtlanteanBarracksAccel", "tis(\"Archer Atlantean\",1)")
+	//Counter Building Atlantean; Train units
+map ("q", "AtlanteanCounterAccel", "tis(\"Maceman\",1)")
+map ("w", "AtlanteanCounterAccel", "tis(\"Javelin Cavalry\",1)")
+map ("e", "AtlanteanCounterAccel", "tis(\"Chieroballista\",1)")
+	//Palace Atlantean; Train units
+map ("q", "AtlanteanPalaceAccel", "tis(\"Trident Soldier\",1)")
+map ("w", "AtlanteanPalaceAccel", "tis(\"Royal Guard\",1)")
+map ("e", "AtlanteanPalaceAccel", "tis(\"Fire Siphon\",1)")
+	//Game start Atlantean
+map ("shift-enter", "game", "uiFindType(\"settlementsThatTrainVillagers\") tis(\"Villager Atlantean\") uiToggleBuildingQueue uiFindType(\"AbstractVillager\") tis(\"Guild\")")
+	//AgeUpDialog
+map ("control-shift-tab", "game", "saveCamera(\"game\") uiFindType(\"settlementsThatTrainVillagers\") uiAgeUpDialog(\"Age 2 Fake\") loadCamera(\"game\")")

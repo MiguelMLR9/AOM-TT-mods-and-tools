@@ -1,6 +1,5 @@
 Estos son los archivos para el extended edition:
 game va en la carpeta '\startup'
-DefaultKeyMap va en la carpeta '\data'
 *IMPORTANTE*
 	EL ARCHIVO UIMAIN NO ES NECESARIO
 	SOLO ES UN RESPALDO DE UNAS MODIFICACIONES QUE LE
