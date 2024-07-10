@@ -1449,7 +1449,7 @@ map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") editMode(\"n
 map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") editMode(\"none\")")
 map ("control-alt-b", "game", "uiFindType(\"AbstractFortress\") editMode(\"none\")")
 map ("control-alt-n", "game", "uiFindType(\"Temple\") editMode(\"none\")")
-map ("control-alt-m", "game", "uiFindType(\"MilitaryBuilding\") editMode(\"none\")")
+map ("control-alt-m", "game", "uiFindType(\"LogicalTypeBuildingsThatTrainMilitary\") editMode(\"none\")")
 map ("control-alt-d", "game", "uiFindType(\"Dock\") editMode(\"none\")")
 
 //Find other buildings, select without move the camera [just select and show in minimap].
@@ -1464,7 +1464,7 @@ map ("control-shift-c", "game", "trackInsert() trackAddWaypoint() trackSave() ui
 map ("control-shift-v", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") trackPlay(1,-1)")
 map ("control-shift-b", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
 map ("control-shift-n", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Temple\") trackPlay(1,-1)")
-map ("control-shift-m", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"MilitaryBuilding\") trackPlay(1,-1)")
+map ("control-shift-m", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"LogicalTypeBuildingsThatTrainMilitary\") trackPlay(1,-1)")
 map ("control-shift-d", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Dock\") trackPlay(1,-1)")
 
 //Find other buildings, select without move the camera [just select and show in minimap].
@@ -1505,6 +1505,7 @@ map ("control-shift-h", "game", "trackInsert() trackAddWaypoint() trackSave() ui
 //map ("control-alt-shift-", "game", "uiFindType(\"\")")
 
 »MIK3D10S«
+
 	//ESPECIALES EXTENDED EDITION
 //Hotkeys que tenia en defaultkeymap pero tuve que agregarlos aqui porque no se puede modificar ese archivo; da error online.
 	//Find Idle Scout + Open strategic Map

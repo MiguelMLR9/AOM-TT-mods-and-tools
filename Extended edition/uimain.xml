@@ -180,7 +180,7 @@
 		<stateentry background="icons\ui minimap flare"/>
 		<command>editMode("flare") uiSetProtoCursor("Waypoint Flag")</command>
 	</gadget>
-	<gadget name="commandPanelHotkeyHelp" type="gadget" outlinecolor="" z="15">
+	<gadget name="commandPanelHotkeyHelp" type="gadget" outlinecolor="" z="16">
 		<gadget name="commandPanelHotkeyHelp00" size1024="122 640 158 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">Q</gadget>
 		<gadget name="commandPanelHotkeyHelp01" size1024="161 640 197 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">W</gadget>
 		<gadget name="commandPanelHotkeyHelp02" size1024="200 640 236 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">E</gadget>
@@ -217,19 +217,19 @@
 		</gadget>
 		<gadget name="CCAggressive" size1024="369 598 399 628" mouseovertext="$$22330$$Set Stance Aggressive" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\aggressive"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands unitSetStanceAggressive</command>
+			<command>uiSetCombatCommands(true) unitSetStanceAggressive</command>
 		</gadget>
 		<gadget name="CCDefensive" size1024="399 598 429 628" mouseovertext="$$22331$$Set Stance Defensive" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\defensive"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands unitSetStanceDefensive</command>
+			<command>uiSetCombatCommands(true) unitSetStanceDefensive</command>
 		</gadget>
 		<gadget name="CCPassive" size1024="429 598 459 628" mouseovertext="$$22332$$Set Stance Passive" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\passive"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands unitSetStancePassive</command>
+			<command>uiSetCombatCommands(true) unitSetStancePassive</command>
 		</gadget>
 		<gadget name="CCguard" size1024="459 598 489 628" mouseovertext="Guard" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\Command Defend Unit Icon"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands editMode("guard")</command>
+			<command>uiSetCombatCommands(true) editMode("guard")</command>
 		</gadget>
 		<gadget name="CCminimapEventButton" size1024="489 595 525 631" mouseovertext="$$22090$$Find Last Notification" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\ui Last Event"></stateentry>
@@ -237,23 +237,23 @@
 		</gadget>
 		<gadget name="CCpatrol" size1024="525 598 555 628" mouseovertext="Patrol" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\Command Patrol icon"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands editMode("patrol")</command>
+			<command>uiSetCombatCommands(true) editMode("patrol")</command>
 		</gadget>
 		<gadget name="CCDefault" size1024="555 598 585 628" mouseovertext="$$22333$$Set Default Formation" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\Formation Line Icon"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands unitSetFormationDefault</command>
+			<command>uiSetCombatCommands(true) unitSetFormationDefault</command>
 		</gadget>
 		<gadget name="CCBox" size1024="585 598 615 628" mouseovertext="$$22334$$Set Box Formation" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\Formation Box Icon"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands unitSetFormationBox</command>
+			<command>uiSetCombatCommands(true) unitSetFormationBox</command>
 		</gadget>
 		<gadget name="CCMixed" size1024="615 598 645 628" mouseovertext="$$22335$$Set Mixed Formation" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\Formation Mixed Icon"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands unitSetFormationMixed</command>
+			<command>uiSetCombatCommands(true) unitSetFormationMixed</command>
 		</gadget>
 		<gadget name="CCSpread" size1024="645 598 675 628" mouseovertext="$$22336$$Set Spread Formation" type="stateButton" z="16" texturereplace="" clampforeground="" clampbackground="" statebuttonuseinternalstates="">
 			<stateentry background="icons\Formation Spread Icon"></stateentry>
-			<command>uiSetCombatCommands() uiToggleCombatCommands unitSetFormationSpread</command>
+			<command>uiSetCombatCommands(true) unitSetFormationSpread</command>
 		</gadget>
      </gadget>
 	<gadget name="unitStatPanel" type="gadget">
