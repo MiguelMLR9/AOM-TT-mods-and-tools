@@ -3,6 +3,7 @@
 <layout>
   <!-- Ekanta UI built on 2005-02-07 -->
   <!-- Modified for AoM:EE and improved by DragonQ -->
+  <!-- Modified again for AoM:EE and improved by MIK3D10S -->
   <gadget name="winLoseDisplay" type="textBox" size1024="20 230 1004 300" textcenterhoriz="" textfont="LargeIngame" textfontsize="24" textcolor="255 255 255" hidden="">$$18438$$You Win</gadget>
   <gadget name="victoryDisplay" type="textBox" textcolor="255 255 255" transparent="" textfont="LargeInGame" textfontsize="24" textcenterhoriz="" textcentervert="" size1024="20 207 1004 607" z="9"></gadget>
   <gadget name="victoryTimerDisplay" type="textBox" textcolor="255 255 255" transparent="" textjustifyright="" textfont="TimerDisplays" textfontsize="12" size1024="531 99 1023 200" resScaleRight=""></gadget>
@@ -693,8 +694,8 @@
 	<gadget name="displayPanel" type="displayPanel" size1024="617 636 772 768" displaypanelselectionsize1024="617 636 772 712" displaypanelinventorysize1024="521 744 589 760" displaypanelpercenttextsize1024="621 715 657 749" displaypanelqueueportraitsize1024="621 717 651 749" displaypanelqueuesize1024="651 715 777 747" displaypanelmultiportraitbuttonseparation="2 6" donthighlight="" textfont="OverlayNumbers" textfontsize="10"></gadget>
 	<gadget name="mainHelpText" transparent="" type="formatText" size1024="51 523 367 622" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.3" textwrapon="" textfont="RolloverFont" textfontsize="12" textmarkup="" formattextusedatareplace="" datarefreshrate="60"></gadget>
 	<gadget name="terseHelpText" transparent="" type="formatText" size1024="51 567 367 622" textcolor="255 255 255" background="" textwrapon="" textfont="RolloverFont" textfontsize="12" textmarkup="" formattextusedatareplace="" formattextbottomfill=""></gadget>
-	<gadget name="unitStatPanel-RepeatQueue" hidden="" type="gadget" transparent="" size1024="350 673 394 717" background="" z="50">
-		<gadget name="unitStatPanel-RepeatQueue-button" type="checkButton" sound="ui_jewel" size1024="350 673 394 717" background="" checkcheckedart="icons\command repeat on icon" checkuncheckedart="icons\command repeat off icon" checkhighlightart="icons\command repeat rollover icon" z="50" mouseovertext="$$23753$$Click this button to repeat current build queue.">
+	<gadget name="unitStatPanel-RepeatQueue" hidden="" type="gadget" transparent="" size1024="384 679 410 709" background="" z="15">
+		<gadget name="unitStatPanel-RepeatQueue-button" type="checkButton" sound="ui_jewel" size1024="384 679 410 709" background="" checkcheckedart="icons\command repeat on icon" checkuncheckedart="icons\command repeat off icon" checkhighlightart="icons\command repeat rollover icon" z="15" mouseovertext="$$23753$$Click this button to repeat current build queue.">
 			<command>uiToggleBuildingQueue</command>
 		</gadget>
 	</gadget>
@@ -2048,5 +2049,36 @@
 		<gadget name="CameraShowButton" type="button" mouseovertext="$$20508$$Show" foreground="icons\ui load cameracut" size1024="990 112 1020 142">
 			<command>loadCamera("game")</command>
 		</gadget>
+	</gadget>
+	<gadget name="makeUnClickThrough" type="gadget" size1024="140 636 446 756" foreground="" z="9" texturereplace="" donthighlight=""/>
+	<gadget name="commandPanelHotkeyHelp" type="gadget" outlinecolor="" z="16">
+		<gadget name="commandPanelHotkeyHelp00" size1024="142 640 178 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">Q</gadget>
+		<gadget name="commandPanelHotkeyHelp01" size1024="177 640 213 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">W</gadget>
+		<gadget name="commandPanelHotkeyHelp02" size1024="212 640 248 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">E</gadget>
+		<gadget name="commandPanelHotkeyHelp03" size1024="248 640 284 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">R</gadget>
+		<gadget name="commandPanelHotkeyHelp04" size1024="284 640 320 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">T</gadget>
+		<gadget name="commandPanelHotkeyHelp05" size1024="320 640 356 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">Y</gadget>
+		<gadget name="commandPanelHotkeyHelp06" size1024="356 640 392 676" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">U</gadget>
+
+		<gadget name="commandPanelHotkeyHelp10" size1024="142 677 178 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">A</gadget>
+		<gadget name="commandPanelHotkeyHelp11" size1024="177 677 213 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">S</gadget>
+		<gadget name="commandPanelHotkeyHelp12" size1024="212 677 248 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">D</gadget>
+		<gadget name="commandPanelHotkeyHelp13" size1024="248 677 284 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">F</gadget>
+		<gadget name="commandPanelHotkeyHelp14" size1024="284 677 320 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">G</gadget>
+		<gadget name="commandPanelHotkeyHelp15" size1024="320 677 356 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">H</gadget>
+		<gadget name="commandPanelHotkeyHelp16" size1024="356 677 392 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">J</gadget>
+
+		<gadget name="commandPanelHotkeyHelp17" size1024="392 677 412 713" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">K</gadget>
+
+		<gadget name="commandPanelHotkeyHelp20" size1024="142 715 178 751" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">Z</gadget>
+		<gadget name="commandPanelHotkeyHelp21" size1024="177 715 213 751" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">X</gadget>
+		<gadget name="commandPanelHotkeyHelp22" size1024="212 715 248 751" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">C</gadget>
+		<gadget name="commandPanelHotkeyHelp23" size1024="248 715 284 751" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">V</gadget>
+		<gadget name="commandPanelHotkeyHelp24" size1024="284 715 320 751" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">B</gadget>
+		<gadget name="commandPanelHotkeyHelp25" size1024="320 715 356 751" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">N</gadget>
+		<gadget name="commandPanelHotkeyHelp26" size1024="356 715 392 751" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 191 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">M</gadget>
+		
+		<gadget name="trainingResearchPanelHotkeyHelp" size1024="617 717 647 749" type="formatText" outlinecolor="" datarefreshrate="60" transparent="" textcolor="255 0 0" textfont="ESOTitlePage" textfontsize="34" textcenterhoriz="" textcentervert="">⇦</gadget>
+	
 	</gadget>
 </layout>
