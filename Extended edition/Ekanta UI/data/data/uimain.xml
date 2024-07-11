@@ -3,6 +3,7 @@
 <layout>
   <!-- Ekanta UI built on 2005-02-07 -->
   <!-- Modified for AoM:EE and improved by DragonQ -->
+  <!-- Modified again for AoM:EE and improved by MIK3D10S -->
   <gadget name="winLoseDisplay" type="textBox" size1024="20 230 1004 300" textcenterhoriz="" textfont="LargeIngame" textfontsize="24" textcolor="255 255 255" hidden="">$$18438$$You Win</gadget>
   <gadget name="victoryDisplay" type="textBox" textcolor="255 255 255" transparent="" textfont="LargeInGame" textfontsize="24" textcenterhoriz="" textcentervert="" size1024="20 207 1004 607" z="9"></gadget>
   <gadget name="victoryTimerDisplay" type="textBox" textcolor="255 255 255" transparent="" textjustifyright="" textfont="TimerDisplays" textfontsize="12" size1024="531 99 1023 200" resScaleRight=""></gadget>
@@ -693,8 +694,8 @@
 	<gadget name="displayPanel" type="displayPanel" size1024="617 636 772 768" displaypanelselectionsize1024="617 636 772 712" displaypanelinventorysize1024="521 744 589 760" displaypanelpercenttextsize1024="621 715 657 749" displaypanelqueueportraitsize1024="621 717 651 749" displaypanelqueuesize1024="651 715 777 747" displaypanelmultiportraitbuttonseparation="2 6" donthighlight="" textfont="OverlayNumbers" textfontsize="10"></gadget>
 	<gadget name="mainHelpText" transparent="" type="formatText" size1024="51 523 367 622" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.3" textwrapon="" textfont="RolloverFont" textfontsize="12" textmarkup="" formattextusedatareplace="" datarefreshrate="60"></gadget>
 	<gadget name="terseHelpText" transparent="" type="formatText" size1024="51 567 367 622" textcolor="255 255 255" background="" textwrapon="" textfont="RolloverFont" textfontsize="12" textmarkup="" formattextusedatareplace="" formattextbottomfill=""></gadget>
-	<gadget name="unitStatPanel-RepeatQueue" hidden="" type="gadget" transparent="" size1024="350 673 394 717" background="" z="50">
-		<gadget name="unitStatPanel-RepeatQueue-button" type="checkButton" sound="ui_jewel" size1024="350 673 394 717" background="" checkcheckedart="icons\command repeat on icon" checkuncheckedart="icons\command repeat off icon" checkhighlightart="icons\command repeat rollover icon" z="50" mouseovertext="$$23753$$Click this button to repeat current build queue.">
+	<gadget name="unitStatPanel-RepeatQueue" hidden="" type="gadget" transparent="" size1024="384 679 410 709" background="" z="15">
+		<gadget name="unitStatPanel-RepeatQueue-button" type="checkButton" sound="ui_jewel" size1024="384 679 410 709" background="" checkcheckedart="icons\command repeat on icon" checkuncheckedart="icons\command repeat off icon" checkhighlightart="icons\command repeat rollover icon" z="15" mouseovertext="$$23753$$Click this button to repeat current build queue.">
 			<command>uiToggleBuildingQueue</command>
 		</gadget>
 	</gadget>
@@ -2049,4 +2050,5 @@
 			<command>loadCamera("game")</command>
 		</gadget>
 	</gadget>
+		<gadget name="makeUnClickThrough" type="gadget" size1024="140 636 412 756" foreground="" z="9" texturereplace="" donthighlight=""/>
 </layout>
