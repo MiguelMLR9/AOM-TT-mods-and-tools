@@ -2971,7 +2971,7 @@
 			<displayname>Avanzar Edad Clasica/Heroica/Mitica</displayname>
 			<event>control-shift-tab</event>
 			<context>game</context>
-            <command>saveCamera("game") uiFindType("settlementsThatTrainVillagers") uiAgeUpDialog("Age 2 Fake") loadCamera("game")</command>
+            <command>trackInsert() trackAddWaypoint() trackSave() uiFindType("settlementsThatTrainVillagers") uiAgeUpDialog("Age 2 Fake") trackPlay(1,-1)</command>
 		</keymapdata>
 		<keymapdata>
 			<name>Start of StartupScript-Greek</name>

@@ -1443,54 +1443,56 @@ map ("mouse5down", "world", "uiDoubleClickSelect(0, true)") //Select all units o
 map ("shift-mouse5down", "world", "uiDoubleClickSelect(1, true)") //Add all units of the same type (in the screen) WHAT ARE PERFORMING THE SAME ACTION to the actual selection
 
 //Find military and mythic buildings [abstract type], select and move the camera to them.
-map ("control-alt-z", "game", "uiFindType(\"settlementsThatTrainVillagers\") editMode(\"none\")")
-map ("control-alt-x", "game", "uiFindType(\"AbstractBarracks\") editMode(\"none\")")
-map ("control-alt-c", "game", "uiFindType(\"AbstractArcheryRange\") editMode(\"none\")")
-map ("control-alt-v", "game", "uiFindType(\"AbstractStable\") editMode(\"none\")")
-map ("control-alt-b", "game", "uiFindType(\"AbstractFortress\") editMode(\"none\")")
-map ("control-alt-n", "game", "uiFindType(\"Temple\") editMode(\"none\")")
+map ("control-alt-w", "game", "uiFindType(\"settlementsThatTrainVillagers\") editMode(\"none\")")
+map ("control-alt-f", "game", "uiFindType(\"AbstractBarracks\") editMode(\"none\")")
+map ("control-alt-g", "game", "uiFindType(\"AbstractArcheryRange\") editMode(\"none\")")
+map ("control-alt-h", "game", "uiFindType(\"AbstractStable\") editMode(\"none\")")
+map ("control-alt-x", "game", "uiFindType(\"AbstractFortress\") editMode(\"none\")")
+map ("control-alt-u", "game", "uiFindType(\"Temple\") editMode(\"none\")")
 map ("control-alt-m", "game", "uiFindType(\"LogicalTypeBuildingsThatTrainMilitary\") editMode(\"none\")")
-map ("control-alt-d", "game", "uiFindType(\"Dock\") editMode(\"none\")")
+map ("control-alt-t", "game", "uiFindType(\"Dock\") editMode(\"none\")")
 
 //Find other buildings, select without move the camera [just select and show in minimap].
 map ("control-alt-s", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArmory\") trackPlay(1,-1)")
-map ("control-alt-f", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Tower\") trackPlay(1,-1)")
-map ("control-alt-g", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Guild\") trackPlay(1,-1)")
+map ("control-alt-d", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Tower\") trackPlay(1,-1)")
+map ("control-alt-e", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Guild\") trackPlay(1,-1)")
+map ("control-alt-z", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Market\") trackPlay(1,-1)")
 
 //Find buildings military and mythic [abstract type], select without move the camera [just select and show in minimap].
-map ("control-shift-z", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"settlementsThatTrainVillagers\") trackPlay(1,-1)")
-map ("control-shift-x", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractBarracks\") trackPlay(1,-1)")
-map ("control-shift-c", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcheryRange\") trackPlay(1,-1)")
-map ("control-shift-v", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") trackPlay(1,-1)")
-map ("control-shift-b", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
-map ("control-shift-n", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Temple\") trackPlay(1,-1)")
+map ("control-shift-w", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"settlementsThatTrainVillagers\") trackPlay(1,-1)")
+map ("control-shift-f", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractBarracks\") trackPlay(1,-1)")
+map ("control-shift-g", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcheryRange\") trackPlay(1,-1)")
+map ("control-shift-h", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractStable\") trackPlay(1,-1)")
+map ("control-shift-x", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
+map ("control-shift-u", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Temple\") trackPlay(1,-1)")
 map ("control-shift-m", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"LogicalTypeBuildingsThatTrainMilitary\") trackPlay(1,-1)")
-map ("control-shift-d", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Dock\") trackPlay(1,-1)")
+map ("control-shift-t", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Dock\") trackPlay(1,-1)")
 
 //Find other buildings, select without move the camera [just select and show in minimap].
 map ("control-shift-s", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArmory\") trackPlay(1,-1)")
-map ("control-shift-f", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Tower\") trackPlay(1,-1)")
-map ("control-shift-g", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Guild\") trackPlay(1,-1)")
+map ("control-shift-d", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Tower\") trackPlay(1,-1)")
+map ("control-shift-e", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Guild\") trackPlay(1,-1)")
+map ("control-shift-z", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Market\") trackPlay(1,-1)")
 
 //Find units by abstract type, select and move the camera to them.
-map ("control-alt-q", "game", "uiFindType(\"AbstractInfantry\") editMode(\"none\")")
-map ("control-alt-w", "game", "uiFindType(\"AbstractArcher\") editMode(\"none\")")
-map ("control-alt-e", "game", "uiFindType(\"AbstractCavalry\") editMode(\"none\")")
-map ("control-alt-r", "game", "uiFindType(\"AbstractSiegeWeapon\") editMode(\"none\")")
-map ("control-alt-t", "game", "uiFindType(\"MythUnit\") editMode(\"none\")")
-map ("control-alt-y", "game", "uiFindType(\"FlyingUnit\") editMode(\"none\")")
+map ("control-alt-i", "game", "uiFindType(\"AbstractInfantry\") editMode(\"none\")")
+map ("control-alt-o", "game", "uiFindType(\"AbstractArcher\") editMode(\"none\")")
+map ("control-alt-p", "game", "uiFindType(\"AbstractCavalry\") editMode(\"none\")")
+map ("control-alt-[", "game", "uiFindType(\"AbstractSiegeWeapon\") editMode(\"none\")")
+map ("control-alt-]", "game", "uiFindType(\"MythUnit\") editMode(\"none\")")
+map ("control-alt-k", "game", "uiFindType(\"Hero\") editMode(\"none\")") //NO ESTA FUNCIONANDO DEL TODO BIEN
+map ("control-alt-l", "game", "uiFindType(\"FlyingUnit\") editMode(\"none\")")
 map ("control-alt-a", "game", "uiFindType(\"AbstractVillager\") editMode(\"none\")")
-map ("control-alt-h", "game", "uiFindType(\"Hero\") editMode(\"none\")") //NO ESTA FUNCIONANDO DEL TODO BIEN
 
 //Find units by abstract type, select without move the camera [just select and show in minimap].
-map ("control-shift-q", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractInfantry\") trackPlay(1,-1)")
-map ("control-shift-w", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcher\") trackPlay(1,-1)")
-map ("control-shift-e", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractCavalry\") trackPlay(1,-1)")
-map ("control-shift-r", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractSiegeWeapon\") trackPlay(1,-1)")
-map ("control-shift-t", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"MythUnit\") trackPlay(1,-1)")
-map ("control-shift-y", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"FlyingUnit\") trackPlay(1,-1)")
+map ("control-shift-i", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractInfantry\") trackPlay(1,-1)")
+map ("control-shift-o", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractArcher\") trackPlay(1,-1)")
+map ("control-shift-p", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractCavalry\") trackPlay(1,-1)")
+map ("control-shift-[", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractSiegeWeapon\") trackPlay(1,-1)")
+map ("control-shift-]", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"MythUnit\") trackPlay(1,-1)")
+map ("control-shift-k", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Hero\") trackPlay(1,-1)") //NO ESTA FUNCIONANDO DEL TODO BIEN
+map ("control-shift-l", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"FlyingUnit\") trackPlay(1,-1)")
 map ("control-shift-a", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"AbstractVillager\") trackPlay(1,-1)")
-map ("control-shift-h", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"Hero\") trackPlay(1,-1)") //NO ESTA FUNCIONANDO DEL TODO BIEN
 
 //Find units
 //map ("control-alt-shift-", "game", "uiFindType(\"\")")
@@ -1533,4 +1535,4 @@ map ("e", "AtlanteanPalaceAccel", "tis(\"Fire Siphon\",1)")
 	//Game start Atlantean
 map ("shift-enter", "game", "uiFindType(\"settlementsThatTrainVillagers\") tis(\"Villager Atlantean\") uiToggleBuildingQueue uiFindType(\"AbstractVillager\") tis(\"Guild\")")
 	//AgeUpDialog
-map ("control-shift-tab", "game", "saveCamera(\"game\") uiFindType(\"settlementsThatTrainVillagers\") uiAgeUpDialog(\"Age 2 Fake\") loadCamera(\"game\")")
+map ("control-shift-tab", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"settlementsThatTrainVillagers\") uiAgeUpDialog(\"Age 2 Fake\") trackPlay(1,-1)")
