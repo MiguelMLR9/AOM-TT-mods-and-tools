@@ -1536,3 +1536,6 @@ map ("e", "AtlanteanPalaceAccel", "tis(\"Fire Siphon\",1)")
 map ("shift-enter", "game", "uiFindType(\"settlementsThatTrainVillagers\") tis(\"Villager Atlantean\") uiToggleBuildingQueue uiFindType(\"AbstractVillager\") tis(\"Guild\")")
 	//AgeUpDialog
 map ("control-shift-tab", "game", "trackInsert() trackAddWaypoint() trackSave() uiFindType(\"settlementsThatTrainVillagers\") uiAgeUpDialog(\"Age 2 Fake\") trackPlay(1,-1)")
+	//Zoom
+map ("control-mousez", "game", "uiWheelZoomFine")
+map ("control-shift-mousez", "game", "uiWheelZoom")
